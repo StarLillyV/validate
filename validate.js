@@ -102,8 +102,8 @@ function renderValidationResults(data) {
     ValidatorHTML += ` Valid!</strong></p>`;
     ValidatorHTML += `
         <p>
-            <a id="vLink1" href="https://validator.w3.org/check?uri=${window.location.href}">Validate HTML</a> |
-            <a id="vLink2" href="https://jigsaw.w3.org/css-validator/validator?uri=${window.location.href}?profile=css3">Validate CSS</a>
+            <a id="vLink1" href="https://validator.w3.org/check?uri=${window.location.href}">Validate <strong>HTML</strong></a> |
+            <a id="vLink2" href="https://jigsaw.w3.org/css-validator/validator?uri=${window.location.href}?profile=css3">Validate <strong>CSS</strong></a>
         </p>
     `;
     if (!isHTMLValid) {
