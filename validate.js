@@ -70,10 +70,10 @@ function validateHTML() {
 }
 
 function checkLocalFile() {
-    const loc = window.location.href;
+    const loc = window.location.hostname
     if (loc.startsWith("file://")) {
         return "File";
-    } else if (loc.startsWith("http://localhost") || loc.startsWith("http://127.0.0.1")) {
+    } else if (loc.startsWith("localhost") || loc.startsWith("127.0.0.1") || loc.endsWith(".local")) {
         return "Local Server"
     } else return false;
 }
